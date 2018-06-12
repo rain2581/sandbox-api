@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: sandbox-api.servolab.one
+  - host: gke-sandbox-api.servolab.one
     http:
       paths:
       - backend:
@@ -21,6 +21,6 @@ spec:
         path: /
   tls:
   - hosts:
-    - sandbox-api.servolab.one
-    secretName: sandbox-api.servolab.one-tls
+    - gke-sandbox-api.servolab.one
+    secretName: gke-sandbox-api.servolab.one-tls
 
